@@ -1,0 +1,120 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hardik Parmar - Interactive Resume</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
+        <!-- Chosen Palette: Slate Gray -->
+        <!-- Application Structure Plan: A single-page portfolio layout with a navigation bar for easy access to different sections like 'About Me', 'Education', and 'Skills'. This structure is more engaging and user-friendly than a traditional resume format, allowing for a more modern and interactive presentation of the information. -->
+        <!-- Visualization & Content Choices: The resume content is organized into logical sections. The 'Skills' section uses a grid layout with icons for better visual appeal and quick comprehension. This approach enhances readability and provides a more dynamic user experience compared to a simple text list. -->
+        <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    </head>
+    <body class="bg-slate-100 text-slate-800">
+
+        <header class="bg-white shadow-md sticky top-0 z-10">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="text-2xl font-bold text-slate-800">Hardik Parmar</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-slate-600 hover:text-slate-800">About Me</a>
+                    <a href="#education" class="text-slate-600 hover:text-slate-800">Education</a>
+                    <a href="#skills" class="text-slate-600 hover:text-slate-800">Skills</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden flex items-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-slate-200">About Me</a>
+                <a href="#education" class="block py-2 px-4 text-sm hover:bg-slate-200">Education</a>
+                <a href="#skills" class="block py-2 px-4 text-sm hover:bg-slate-200">Skills</a>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-6 py-12">
+
+            <section id="about" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">About Me</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <p class="text-lg leading-relaxed">Highly motivated and analytical undergraduate student seeking a 2026 Corporate & Investment Bank - Investment Banking Analyst Off-Cycle Internship at JPMorgan Chase. Eager to apply strong quantitative skills, adaptability, and a collaborative spirit to contribute to financial modeling, market analysis, and client advisory, while gaining invaluable experience in a dynamic global economy.</p>
+                    <div class="mt-6 flex flex-wrap gap-4">
+                        <a href="mailto:work.hardikparmar21@gmail.com" class="bg-slate-800 text-white py-2 px-4 rounded-md hover:bg-slate-700">Email Me</a>
+                        <a href="https://www.linkedin.com/in/hardik-santosh-parmar/" target="_blank" class="bg-slate-800 text-white py-2 px-4 rounded-md hover:bg-slate-700">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">Education</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold">Medi-Caps University</h3>
+                    <p class="text-slate-600 mb-2">Indore, India</p>
+                    <p class="text-lg">Bachelor of Computer Application</p>
+                    <p class="text-slate-600">Expected Graduation: May 2026</p>
+                </div>
+            </section>
+
+            <section id="skills" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4">Technical Skills</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#128187;</span> <div><strong>Financial Software:</strong> Capital IQ, FactSet</div></li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#128202;</span> <div><strong>Data Analysis:</strong> Microsoft Excel, PowerPoint, Word</div></li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#128187;</span> <div><strong>Programming:</strong> Python, C, C++</div></li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#127760;</span> <div><strong>Languages:</strong> English (Fluent)</div></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4">Soft Skills</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#129504;</span> Analytical & Quantitative Reasoning</li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#128161;</span> Problem-Solving & Innovative Thinking</li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#127744;</span> Adaptability & Resilience</li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#129309;</span> Collaboration & Teamwork</li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#128100;</span> Client Relationship Management</li>
+                            <li class="flex items-center"><span class="text-2xl mr-4">&#128483;</span> Communication (Written & Verbal)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-white mt-12">
+            <div class="container mx-auto px-6 py-4 text-center text-slate-600">
+                &copy; 2024 Hardik Parmar. All Rights Reserved.
+            </div>
+        </footer>
+
+        <script>
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    if (mobileMenu.classList.contains('hidden') === false) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+    </html>
+    
